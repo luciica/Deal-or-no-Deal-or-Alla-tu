@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Take_it_or_Leave_it</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="acceptoffer.png" />
+    <None Remove="acceptoffersmall.png" />
+    <None Remove="keepmybox.png" />
+    <None Remove="keepplaying.png" />
+    <None Remove="rules.JPG" />
+    <None Remove="startplaying.JPG" />
+    <None Remove="swapbox.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="acceptoffer.png" />
+    <Resource Include="acceptoffersmall.png" />
+    <Resource Include="keepmybox.png" />
+    <Resource Include="keepplaying.png" />
+    <Resource Include="rules.JPG" />
+    <Resource Include="startplaying.JPG" />
+    <Resource Include="swapbox.png" />
+  </ItemGroup>
+
+</Project>

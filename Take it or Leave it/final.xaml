@@ -1,0 +1,45 @@
+﻿<Window x:Class="Take_it_or_Leave_it.final"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Take_it_or_Leave_it"
+        mc:Ignorable="d"
+        Title="final" Height="600" Width="600">
+    <Window.Background>
+        <ImageBrush ImageSource="/acceptoffer.png" Stretch="UniformToFill"/>
+    </Window.Background>
+    <Grid Background="#FF5B89B8">
+        <StackPanel Width="600" Orientation="Horizontal" Height="200" VerticalAlignment="Top">
+            <Label HorizontalAlignment="Center" Width="600" Height="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="50">Take it or leave it</Label>
+        </StackPanel>
+
+        <StackPanel Width="600" Orientation="Horizontal" Height="400" VerticalAlignment="Bottom">
+            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnAcceptOffer" Height="200" Width="200" Click="BtnAcceptOffer_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/acceptoffer.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnKeepMyBox" Height="200" Width="200" Click="BtnKeepMyBox_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/keepmybox.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Button x:Name="btnSwapBox" Height="200" Width="200" Click="BtnSwapBox_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/swapbox.png"/>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+
+            
+        </StackPanel>
+    </Grid>
+</Window>
