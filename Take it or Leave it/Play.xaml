@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Take_it_or_Leave_it"
         mc:Ignorable="d"
-        Title="Play" Height="1000" Width="1500" Background="#FF5B89B8" Loaded="Window_Loaded">
+        Title="Select your main box and keep opening boxes" Height="1000" Width="1500" Background="#FF5B89B8">
     
     <Window.Resources> 
         <Style x:Key="btnNumberStyle" TargetType="Button">
@@ -21,7 +21,6 @@
         </Style>
     </Window.Resources>
 
-    
 
     <Grid>  
         <Grid.RowDefinitions>
@@ -65,26 +64,26 @@
         <Label x:Name="lblShow20" Grid.Row="9" Grid.Column="3" Style="{StaticResource lblShowStyle}" FontSize="50" Content="£250,000" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
 
 
-        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"> </Button>
-        <Button x:Name="btn2" Grid.Row="1" Grid.Column="1"  Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"> </Button>
-        <Button x:Name="btn3" Grid.Row="2" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn4" Grid.Row="3" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn5" Grid.Row="4" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn6" Grid.Row="5" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn7" Grid.Row="6" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn8" Grid.Row="7" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn9" Grid.Row="8" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn10" Grid.Row="9" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn11" Grid.Row="0" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn13" Grid.Row="2" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn14" Grid.Row="3" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn15" Grid.Row="4" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn16" Grid.Row="5" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn17" Grid.Row="6" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn18" Grid.Row="7" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn19" Grid.Row="8" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
-        <Button x:Name="btn20" Grid.Row="9" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn1" Grid.Row="0" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"> </Button>
+        <Button x:Name="btn2" Grid.Row="1" Grid.Column="1"  Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"> </Button>
+        <Button x:Name="btn3" Grid.Row="2" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn4" Grid.Row="3" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn5" Grid.Row="4" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn6" Grid.Row="5" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn7" Grid.Row="6" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn8" Grid.Row="7" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn9" Grid.Row="8" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn10" Grid.Row="9" Grid.Column="1" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn11" Grid.Row="0" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn12" Grid.Row="1" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn13" Grid.Row="2" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn14" Grid.Row="3" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn15" Grid.Row="4" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn16" Grid.Row="5" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn17" Grid.Row="6" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn18" Grid.Row="7" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn19" Grid.Row="8" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
+        <Button x:Name="btn20" Grid.Row="9" Grid.Column="2" Content="" Background="DarkBlue"  Foreground="White" FontWeight="Bold" FontSize="50" Click="Boxes_Click" IsEnabled="True"></Button>
         
     </Grid>
 </Window>

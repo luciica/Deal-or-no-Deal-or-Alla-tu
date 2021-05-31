@@ -5,41 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Take_it_or_Leave_it"
         mc:Ignorable="d"
-        Title="final" Height="600" Width="600">
+        Title="final" Height="400" Width="600">
     <Window.Background>
         <ImageBrush ImageSource="/acceptoffer.png" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid Background="#FF5B89B8">
-        <StackPanel Width="600" Orientation="Horizontal" Height="200" VerticalAlignment="Top">
-            <Label HorizontalAlignment="Center" Width="600" Height="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="50">Take it or leave it</Label>
-        </StackPanel>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Width="600" Orientation="Horizontal" Height="400" VerticalAlignment="Bottom">
-            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="btnAcceptOffer" Height="200" Width="200" Click="BtnAcceptOffer_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/acceptoffer.png"/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="btnKeepMyBox" Height="200" Width="200" Click="BtnKeepMyBox_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/keepmybox.png"/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="6" FontSize="50" Content="Take it or Leave it" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+        <TextBox x:Name="TxtFinal"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
 
-            <StackPanel Width="200" Orientation="Horizontal" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="btnSwapBox" Height="200" Width="200" Click="BtnSwapBox_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/swapbox.png"/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+        <Button Grid.Row="2" Grid.Column="0"  Grid.RowSpan="4" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Height="200" x:Name="btnAcceptOffer" Click="BtnAcceptOffer_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="/acceptoffer.png"/>
+            </Button.Background>
+        </Button>
 
-            
-        </StackPanel>
+
+        <Button Grid.Row="2" Grid.Column="2"  Grid.RowSpan="4" Grid.ColumnSpan="2" Height="200" x:Name="btnKeepPlaying" Click="BtnKeepMyBox_Click" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="/keepmybox.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="4"  Grid.RowSpan="4" Grid.ColumnSpan="2" Height="200"  x:Name="btnSwapBox" Click="BtnSwapBox_Click" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="/swapbox.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

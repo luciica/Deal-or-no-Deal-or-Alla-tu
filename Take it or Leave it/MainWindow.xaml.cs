@@ -26,10 +26,12 @@ namespace Take_it_or_Leave_it
         }
 
         private void BtnStart_Click(object sender, RoutedEventArgs e)
-        {   //display the play window
+        {
+            //display the play window
             Play play = new Play();
             play.Show();
         }
 
+        
     }
 }

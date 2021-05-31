@@ -10,27 +10,35 @@
         <ImageBrush ImageSource="/acceptoffer.png" Stretch="UniformToFill"/>
     </Window.Background>
     <Grid Background="#FF5B89B8">
-        <StackPanel Width="600" Orientation="Horizontal" Height="200" VerticalAlignment="Top">
-            <Label HorizontalAlignment="Center" Width="600" Height="200" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="50">Take it or leave it</Label>
-        </StackPanel>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-        <StackPanel Width="600" Orientation="Horizontal" Height="400" VerticalAlignment="Bottom">
-            <StackPanel Width="300" Orientation="Horizontal" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button x:Name="btnAcceptOffer" Height="300" Width="300" Click="BtnAcceptOffer_Click">
-                   <Button.Background>
-                        <ImageBrush ImageSource="/acceptoffer.png"/>
-                   </Button.Background>
-                </Button>
-            </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+      
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" Content="Take it or Leave it" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
+        <TextBox x:Name="TxtOffer"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
 
-            <StackPanel Width="300" Orientation="Horizontal" Height="300" HorizontalAlignment="Right">
-                <Button x:Name="btnKeepPlaying" Height="300" Width="300" Click="BtnKeepPlaying_Click">
-                    <Button.Background>
-                        <ImageBrush ImageSource="/keepplaying.png"/>
-                    </Button.Background>
-                </Button>
-            </StackPanel>
+        <Button Grid.Row="2" Grid.Column="0"  Grid.RowSpan="4" VerticalAlignment="Bottom" Height="300" x:Name="btnAcceptOffer" Click="BtnAcceptOffer_Click" >
+            <Button.Background>
+                <ImageBrush ImageSource="/acceptoffer.png"/>
+            </Button.Background>
+        </Button>
 
-        </StackPanel>
+
+        <Button Grid.Row="2" Grid.Column="1"  Grid.RowSpan="4" Height="300" x:Name="btnKeepPlaying" Click="BtnKeepPlaying_Click" VerticalAlignment="Bottom">
+            <Button.Background>
+                <ImageBrush ImageSource="/keepplaying.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>
