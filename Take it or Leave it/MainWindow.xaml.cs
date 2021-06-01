@@ -31,7 +31,6 @@ namespace Take_it_or_Leave_it
             Play play = new Play();
             play.Show();
         }
-
         
     }
 }

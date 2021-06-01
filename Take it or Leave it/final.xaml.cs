@@ -20,6 +20,7 @@ namespace Take_it_or_Leave_it
         private int firstBox;
         private int lastBox;
         private double offerfinal;
+       
 
         public final(int first, int last)
         {
@@ -28,15 +29,15 @@ namespace Take_it_or_Leave_it
             lastBox = last;
 
             // calculates the offer amount
-            offerfinal = (first + last / 2) * 0.75;
-
+           offerfinal = Math.Round((last + first / 2) * 0.75);
+            
             //it displays in the text box
-            TxtFinal.Text = "The banker's offer is " + offerfinal;
+            TxtFinal.Text = "The banker's offer is £" + offerfinal;
         }
 
         private void BtnSwapBox_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Congratulations, you won " + lastBox + "Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Congratulations, you won £" + lastBox + ". Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 //opens a new game, without showing the rules, as you just played
@@ -51,7 +52,8 @@ namespace Take_it_or_Leave_it
 
         private void BtnKeepMyBox_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Congratulations, you won " + firstBox + "Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
+
+            MessageBoxResult result = MessageBox.Show("Congratulations, you won £" + firstBox + ". Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 //opens a new game, without showing the rules, as you just played
@@ -66,7 +68,7 @@ namespace Take_it_or_Leave_it
 
         private void BtnAcceptOffer_Click(object sender, RoutedEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Congratulations, you won " + offerfinal + "Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Congratulations, you won £" + offerfinal + ". Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 //opens a new game, without showing the rules, as you just played

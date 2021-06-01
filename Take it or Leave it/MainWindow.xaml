@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Take_it_or_Leave_it"
         mc:Ignorable="d"
-        Title="Rules" Height="1000" Width="1500" Background="Azure">
-    <StackPanel HorizontalAlignment="Center" Height="612" VerticalAlignment="Top" Width="1284" Margin="0,158,0,0" Background="#FF5B89B8">
+        Title="Rules" Height="700" Width="1000" Background="#FF5B89B8">
+    <StackPanel HorizontalAlignment="Center" Height="612" VerticalAlignment="Top" Width="1284" Margin="0,100,0,0" Background="#FF5B89B8">
 
-        <Image x:Name="rules" Source="/rules.JPG" Height="420"/>
+        <Image x:Name="rules" Source="/rules.JPG" Height="331" Width="989"/>
 
-        <Button x:Name="btnStart" Click="BtnStart_Click" Height="200" RenderTransformOrigin="0.5,0.5">
+        <Button x:Name="btnStart" Click="BtnStart_Click" Height="124" RenderTransformOrigin="0.5,0.5" Width="731">
 
             <Button.Background>
                 <ImageBrush ImageSource="/startplaying.JPG" />

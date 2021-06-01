@@ -29,10 +29,10 @@ namespace Take_it_or_Leave_it
             noOfBoxes = noleft;
 
             // calculates the offer amount
-            offeramount = (total / (noOfBoxes + 1) * 0.8);
+            offeramount = Math.Round((total / noOfBoxes) * 0.8);
 
             //it displays in the text box
-            TxtOffer.Text = "The banker's offer is " + offeramount;
+            TxtOffer.Text = "The banker's offer is £" + offeramount;
 
         }
         
@@ -47,12 +47,14 @@ namespace Take_it_or_Leave_it
         {
             
             
-            MessageBoxResult result = MessageBox.Show("Congratulations, you won " + offeramount + "Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
+            MessageBoxResult result = MessageBox.Show("Congratulations, you won £" + offeramount + ". Do you want to play again?", "Congratulations", MessageBoxButton.YesNo);
             if (result == MessageBoxResult.Yes)
             {
                 //opens a new game, without showing the rules, as you just played
+
                 Play play = new Play();
                 play.Show();
+                
             }
             else
             {

@@ -25,7 +25,7 @@
         </Grid.ColumnDefinitions>
       
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" Content="Take it or Leave it" HorizontalAlignment="Center" VerticalAlignment="Center" ></Label>
-        <TextBox x:Name="TxtOffer"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
+        <TextBox x:Name="TxtOffer" BorderThickness="0" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" FontSize="45" Background="#FF5B89B8" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBox>
 
         <Button Grid.Row="2" Grid.Column="0"  Grid.RowSpan="4" VerticalAlignment="Bottom" Height="300" x:Name="btnAcceptOffer" Click="BtnAcceptOffer_Click" >
             <Button.Background>
